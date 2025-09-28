@@ -14,7 +14,7 @@ with open("./README.md", "r") as readme_file:
 setuptools.setup(
     name="flake8_deprecation",
     license="MIT",
-    version="1.0.0",
+    version="1.0.1",
     description="flake8 extension to warning when you call a function that calls warning.warn",
     author="Campbell Starky",
     install_requires=requires,

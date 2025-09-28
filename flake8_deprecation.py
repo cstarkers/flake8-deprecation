@@ -10,7 +10,7 @@ if TYPE_CHECKING:
 
 class Flake8Deprecation:
     name: str = "flake8-deprecation"
-    version: str ="1.0.0"
+    version: str ="1.0.1"
 
     def __init__(self, tree: "ast.Module", filename: str)-> None:
         #print(f"Current working directory: {os.getcwd()}")
