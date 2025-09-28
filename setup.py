@@ -7,6 +7,10 @@ requires = [
 
 ]
 
+with open("./README.md", "r") as readme_file:
+    readme: str = readme_file.read()
+
+
 setuptools.setup(
     name="flake8_deprecation",
     license="MIT",
@@ -19,6 +23,9 @@ setuptools.setup(
             "WNG311 = flake8_deprecation:Flake8Deprecation",
         ],
     },
+    url="https://github.com/cstarkers/flake8-deprecation",
+    long_description=readme,
+    long_description_content_type="text/markdown",
     py_modules=["flake8_deprecation"],
     classifiers=[
         "Framework :: Flake8",
